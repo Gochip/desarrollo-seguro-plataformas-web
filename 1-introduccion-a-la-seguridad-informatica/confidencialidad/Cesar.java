@@ -3,7 +3,7 @@ public class Cesar {
 	public static String alfabeto = "abcdefghijklmnopqrstuvwxyz ";
 	public static int movimiento = 3;
 	public static void main(String args[]) {
-		String mensajeEnClaro = "el mejor modulo del programa clip es el de ciberseguridad";
+		String mensajeEnClaro = "desarrollo seguro de plataformas web";
 
 		String mensajeCifrado = "";
 		for (int i = 0; i < mensajeEnClaro.length(); i++) {
