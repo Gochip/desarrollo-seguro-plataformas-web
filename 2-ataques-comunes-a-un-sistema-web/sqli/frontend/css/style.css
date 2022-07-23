@@ -1,0 +1,44 @@
+#header, #header .navbar{
+    background-color: #00548b!important;
+    border:none;
+    margin-bottom: 0px;
+}
+.navbar .navbar-brand{
+    background-image: url('../img/logo-small.png');
+    width: 121px;
+    height: 34px;
+    margin-top: 7px;
+    color:transparent!important;
+}
+.navbar .navbar-brand, .navbar .navbar-nav>li>a{
+    color:#fff!important;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
+    background-color: #00548b!important;
+}
+main{
+    min-height: 70vh;
+}
+#content-header{
+    background-color: #002741;
+    color:#fff;
+    padding: 32px 0px;
+}
+footer{
+    padding: 30px;
+    background-color: #002741;
+}
+#form-filter-search{
+    margin: 24px 0px;
+}
+label[for="slc-project-type"]{
+    font-weight: normal;
+}
+@media (max-width: 768px) {
+    #slc-project-type{
+        width: 55%;
+        float:left;
+        display: block;
+        margin-right: 8px;
+    }
+}
