@@ -1,0 +1,29 @@
+version: "3"
+services:
+  bd:
+    image: mysql:5.6
+    command: --init-file /data/application/create_database.sql --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_ROOT_PASSWORD: 12345678
+      MYSQL_ROOT_HOST: '%'
+    volumes:
+      - ./db/create_database.sql:/data/application/create_database.sql
+    ports:
+      - "3306:3306"
+    networks:
+      - default
+
+  web:
+    build: .
+    environment:
+      MYSQL_DATABASE_HOST: bd
+      MYSQL_DATABASE_USER: root
+      MYSQL_DATABASE_PASSWORD: 12345678
+      MYSQL_DATABASE_DB: sqli_poc
+      PYTHONUNBUFFERED: 1
+    ports:
+      - "5000:5000"
+    links:
+      - bd
+    networks:
+      - default
