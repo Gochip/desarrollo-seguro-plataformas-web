@@ -11,12 +11,4 @@ if ($mysqli->connect_errno) {
 	exit;
 }
 
-$buscar_por_codigo = $_GET["codigo"];
-
-if (!($resultado = $mysqli->query("CALL get_usuario_por_codigo('" . $buscar_por_codigo . "')"))) {
-    echo "Falló CALL: (" . $mysqli->errno . ") " . $mysqli->error;
-	exit;
-}
-
-$fila = $resultado->fetch_assoc();
-var_dump($fila);
+$mysqli->query("CREATE PROCEDURE get_usuario_por_codigo(IN codigoBuscar VARCHAR(40)) BEGIN SELECT * FROM usuarios WHERE codigo=codigoBuscar; END;");
