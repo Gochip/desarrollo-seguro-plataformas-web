@@ -10,9 +10,9 @@ Los ejercicios de este libro tienen como objetivo orientar al estudiante al desa
 6. Despliegue seguro.
 
 # Autores del libro #
-Parisi Germán
-Bertola Federico
+* Parisi Germán
+* Bertola Federico
 
 # Colaboradores del libro #
-Barrionuevo Ileana
-Mangini Agustín
+* Barrionuevo Ileana
+* Mangini Agustín
