@@ -1,0 +1,15 @@
+version: "3"
+services:
+  web:
+    build: .
+    environment:
+      DB_HOST: bd
+      DB_USER: root
+      DB_PASSWORD: 12345678
+      DB_NAME: idor
+    ports:
+      - "80:80"
+    volumes:
+      - ./:/var/www/html/
+    networks:
+      - default

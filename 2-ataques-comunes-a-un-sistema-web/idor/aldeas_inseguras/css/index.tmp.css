@@ -1,0 +1,23 @@
+html{ 
+  background: url(../img/bg-min.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body{
+	background-color:transparent;
+}
+
+.fondo{
+	color:black;
+	background-color:rgba(146,164,106,0.6);
+}
+
+.error{
+	background-color:rgba(194,14,14,0.8);
+}
+
+.exito{
+	background-color:rgba(61,229,28,0.6);
+}
