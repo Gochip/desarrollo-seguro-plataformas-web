@@ -10,7 +10,7 @@ Por otro lado, el receptor es el encargado de recibir las cookies y almacenarlas
 ### Ejecutar proyecto
 
 Ejecutar: `docker-compose up`  
-Luego ingresar a: http:localhost/xss/app/  
+Luego ingresar a: http://localhost/xss/app/  
   
 Usuarios por defecto:  
 - german 123  
