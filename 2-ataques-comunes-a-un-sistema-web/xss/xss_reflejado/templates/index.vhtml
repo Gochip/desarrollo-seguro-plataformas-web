@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es_AR">
+<head>
+    <meta charset="UTF-8">
+    <title>XSS Reflejado</title>
+</head>
+<body>
+<div>
+    <form>
+        <input type="text" name="search" placeholder="Buscar ...">
+        <input type="submit" value="Buscar">
+    </form>
+</div>
+<div>
+    {% if search %}
+    <h5>Búsqueda: {{search}}</h5>
+    {% else %}
+    <h5>Usuarios</h5>
+    {% endif %}
+    <table style="border-width: 1px">
+        <thead>
+            <th>ID</th>
+            <th>Username</th>
+            <th>Email</th>
+        </thead>
+        <tbody>
+            {% for user in users %}
+            <tr>
+                <td>{{user["id"]}}</td>
+                <td>{{user["username"]}}</td>
+                <td>{{user["email"]}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
