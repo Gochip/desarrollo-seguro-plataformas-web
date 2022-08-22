@@ -1,0 +1,49 @@
+*{
+	margin:0;
+	padding:0;
+	font-family:sans-serif;
+}
+body{
+	background-color:#eee;
+}
+div.contenedor{
+	background-color:#fff;
+	border-radius:5px;
+	width:70%;
+	margin:10px auto;
+}
+div.centro{
+	padding:10px;
+}
+.mensaje{
+	padding:5px;
+	border-radius:5px;
+	background-color:#FFFC99;
+	border:1px solid #FAE769;
+}
+td{
+	padding:5px;
+}
+input[type=text], input[type=password]{
+	padding:5px;
+	border-radius:4px;
+	border:1px solid #aaa;
+}
+input[type=submit]{
+	color:#fff;
+	font-weight:bold;
+	padding:5px;
+	border-radius:4px;
+	background-image:linear-gradient(to top, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.0) 100%);
+	background-color:blue;
+	border:1px solid #000;
+}
+input[type=submit]:hover{
+	cursor:pointer;
+}
+#encabezado_usuario{
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	background-color:#7DB5FF;
+	padding:10px;
+}
