@@ -1,5 +1,4 @@
-#XSS persistente
-=====================================
+# XSS persistente
 
 Este proyecto muestra un ataque de XSS persistente.
 
@@ -8,7 +7,7 @@ Adentro del directorio app existe un directorio private que contiene 2 archivos 
 
 Por otro lado, el receptor es el encargado de recibir las cookies y almacenarlas en un archivo temporal dentro del contenedor /tmp/sesiones_robadas.txt.
 
-###Ejecutar el proyecto
+### Ejecutar proyecto
 
 Ejecutar: `docker-compose up`  
 Luego ingresar a: http:localhost/xss/app/  
