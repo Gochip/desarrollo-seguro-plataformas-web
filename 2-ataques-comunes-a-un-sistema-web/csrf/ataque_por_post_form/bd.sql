@@ -14,5 +14,9 @@ CREATE TABLE IF NOT EXISTS usuarios (
 
 /* INSERCIONES */
 
-INSERT INTO usuarios (nombre, clave, domicilio, cbu, email) VALUES ('german','123', 'Facundo Quiroga 380', 'germanparisi', 'germannparisi@gmail.com');
+INSERT INTO usuarios (nombre, clave, domicilio, cbu, email) VALUES ('german','123456', 'Facundo Quiroga 380', 'germanparisi', 'germannparisi@gmail.com');
 INSERT INTO usuarios (nombre, clave, domicilio, cbu, email) VALUES ('fede','123', 'Illia 600', 'fedebertola', 'federicojbertola@gmail.com');
+INSERT INTO usuarios (nombre, clave, domicilio, cbu, email) VALUES ('franco','disenio', 'Illia 600', 'nico123', 'franco_disenio@gmail.com');
+INSERT INTO usuarios (nombre, clave, domicilio, cbu, email) VALUES ('valentina','tini', 'TiniTini 200', 'depaul', 'ttt@gmail.com');
+INSERT INTO usuarios (nombre, clave, domicilio, cbu, email) VALUES ('nehuel','del1al6', 'Carlos Vega', 'martin', 'martin@gmail.com');
+INSERT INTO usuarios (nombre, clave, domicilio, cbu, email) VALUES ('augusto','contrasenia', 'Illia 601', 'cualquiera', 'augusto_disenio@gmail.com');

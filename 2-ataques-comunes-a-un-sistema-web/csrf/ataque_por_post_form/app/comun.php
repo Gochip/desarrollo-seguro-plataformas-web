@@ -1,6 +1,11 @@
 <?php
 ini_set("display_errors", 1);
 
+/*session_set_cookie_params([
+    'secure' => false,
+    'samesite' => 'None'
+]);*/
+
 session_start();
 $dbhost = getenv("DB_HOST");
 $dbuser = getenv("DB_USER");

@@ -18,7 +18,9 @@ $mensaje = "";
 if(isset($_POST["btnEnviar"])){
 	if(isset($_POST["txtComentario"]) && !empty($_POST["txtComentario"])){
 		global $conexion;
-		$insercion = "INSERT INTO comentarios (comentario, id_usuario) VALUES ('{$_POST["txtComentario"]}',{$_SESSION["id_usuario"]})";
+		$comment = str_replace("<","&lt", $_POST["txtComentario"]);
+        $comment = str_replace(">","&gt", $comment);	
+		$insercion = "INSERT INTO comentarios (comentario, id_usuario) VALUES ('{$comment}',{$_SESSION["id_usuario"]})";
 		if ($conexion->query($insercion)) {
 			$mensaje = "Comentario cargado";
 		}else{
