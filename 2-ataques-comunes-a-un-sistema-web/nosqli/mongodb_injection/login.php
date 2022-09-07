@@ -1,7 +1,7 @@
 <?php
-
 require_once "vendor/autoload.php";
-
+#phpinfo();
+#exit();
 ini_set("display_errors", 1);
 error_reporting(1);
 
@@ -9,7 +9,7 @@ use MongoDB\Client as Client;
 use MongoDB\BSON\ObjectID as ObjectID;
 
 /* * * MongoDB * * */
-define('CONNECTION_STRING_MONGO_DB', 'mongodb://localhost:27017');
+define('CONNECTION_STRING_MONGO_DB', 'mongodb://root:pass_mongodb@mongo:27017');
 define('MONGO_DB', 'test');
 
 if (!defined("CONNECTION_STRING_MONGO_DB")) {
@@ -43,8 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             if (isset($usuario)) {
                 $us_array = $usuario->toArray();
                 if(count($us_array) > 0) {
-                    //$mensaje = "Ingreso exitoso: [[AQUÍ VA EL HASH GANADOR]]";
-                    $mensaje = "Ingreso exitoso";
+                    $mensaje = "¡Ingreso exitoso!";
                 }
             }
         }
@@ -80,7 +79,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </form>
     </body>
 </html>
-
-
-
 
