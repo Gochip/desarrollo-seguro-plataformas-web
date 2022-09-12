@@ -1,0 +1,29 @@
+version: "3"
+services:
+  bd:
+    image: mysql:5.6
+    command: --init-file /data/application/bd.sql --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_ROOT_PASSWORD: 12345678
+    volumes:
+      - ./bd.sql:/data/application/bd.sql
+    ports:
+      - "3306:3306"
+    networks:
+      - default
+
+  web:
+    build: .
+    environment:
+      DB_HOST: bd
+      DB_USER: root
+      DB_PASSWORD: 12345678
+      DB_NAME: csrf_form_post
+    ports:
+      - "80:80"
+    volumes:
+      - ./:/var/www/html/csrf_form_post
+    links:
+      - bd
+    networks:
+      - default
