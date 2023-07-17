@@ -4,8 +4,8 @@ Los ejercicios de este libro tienen como objetivo orientar al estudiante al desa
 # Capítulos #
 1. Introducción a la seguridad informática.
 2. Ataques comunes a un sistema web.
-3. Desarrollo de software seguro.
-4. Autenticación y autorización.
+3. Autenticación y autorización.
+4. Desarrollo de software seguro.
 5. Criptografía aplicada.
 6. Despliegue seguro.
 
@@ -16,3 +16,4 @@ Los ejercicios de este libro tienen como objetivo orientar al estudiante al desa
 # Colaboradores del libro #
 * Barrionuevo Ileana
 * Mangini Agustín
+* Álvarez Agustín
