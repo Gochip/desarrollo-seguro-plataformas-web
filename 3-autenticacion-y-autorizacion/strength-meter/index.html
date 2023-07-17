@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            window.addEventListener('load', (event) => {
+                let password = document.getElementById("password");
+
+                password.addEventListener("keyup", function(){
+                    let pass = document.getElementById("password").value;
+                    let robustez = checkStrength(pass);
+                    console.log(robustez);
+                });
+
+                function checkStrength(password) {
+                    let strength = 0;
+                    
+                    // El password contiene al menos un caracter.
+                    if (password.length >= 8) {
+                        strength += 1;
+                    }
+
+                    // El password contiene una minúscula o mayúscula.
+                    if (password.match(/([a-z].*[A-Z])|([A-Z].*[a-z])/)) {
+                        strength += 1;
+                    }
+                    
+                    // El password contiene números.
+                    //If it has numbers and characters
+                    if (password.match(/([0-9])/)) {
+                        strength += 1;
+                    }
+                    
+                    // El password contiene algún caracter especial.
+                    //If it has one special character
+                    if (password.match(/([!,%,&,@,#,$,^,*,?,_,~])/)) {
+                        strength += 1;
+                    }
+                    
+                    // El password es más largo que 7.
+                    if (password.length > 7) {
+                        strength += 1;
+                    }
+                    return strength;
+                }
+            });
+        </script>
+    </head>
+    <body>
+        <input type="text" id="password" />
+    </body>
+</html>
