@@ -6,3 +6,6 @@ Para levantar el proyecto, debemos ejecutar docker compose para que se inicien l
 
 ### Probar vulnerabilidades
 Una vez levantado el proyecto, ingresar mediante un navegador web a *http://localhost/sqli/frontend/*. ¡Listo! Comenzar a probar inyecciones sqli...
+
+### Objetivo
+El objetivo es lograr tener acceso a los proyectos de tipo APT.
