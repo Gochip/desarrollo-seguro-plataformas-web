@@ -18,13 +18,11 @@ $mensaje = "";
 if(isset($_POST["btnEnviar"])){
 	if(isset($_POST["txtComentario"]) && !empty($_POST["txtComentario"])){
 		global $conexion;
-		$comment = str_replace("<","&lt", $_POST["txtComentario"]);
-        $comment = str_replace(">","&gt", $comment);	
+                $comment = $_POST["txtComentario"];
 		$insercion = "INSERT INTO comentarios (comentario, id_usuario) VALUES ('{$comment}',{$_SESSION["id_usuario"]})";
 		if ($conexion->query($insercion)) {
 			$mensaje = "Comentario cargado";
 		}else{
-			
 			$mensaje = "Error al tratar de cargar comentario: ".$conexion->error;
 		}
 	}
